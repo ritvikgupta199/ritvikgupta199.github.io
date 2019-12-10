@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Ritvik | Home</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="logo.png">
+
+  <!-- Bootstrap CSS File-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!--CSS Style File-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Google Font File-->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'>
+  
+  <!--JQuery File-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!--Bootstrap Js File-->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome File-->
+  <script src="https://kit.fontawesome.com/1d1574361f.js" crossorigin="anonymous"></script>
+
+  <!--JavaScript File-->
+  <script src="script.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!--Loader div-->
+  <div class="loader">
+      <div class="square"></div>
+  </div>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+     
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" id="collapse-btn" data-toggle="collapse" data-target="#myNavbar">
+          <i class="fa fa-bars fa-2x" id="navicon" aria-hidden="true"></i>                    
+        </button>
+        <a class="navbar-brand" id="head" href="#home"><b>Ritvik Gupta</b></a>
+      </div>
+     
+      <div class="collapse navbar-collapse" id="myNavbar">
+  
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#abt-me">About Me</a></li>
+          <li><a href="#achvmnts">Scholastic Achievements</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#comment_div">Comment</a></li>
+        </ul>
+      
+      </div>
+  
+    </div>
+  </nav>
+
+  <!--Modal for comments-->
+  
+  <div id="comment_div" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header modal-top">
+            <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+            <font class="modal-heading">Comment</font>
+          </div>
+          <div class="modal-body">
+
+            <div class="form">
+            <form id="comment" class="form-horizontal">
+              <div class="form-group row">
+                <label class="control-label col-md-2" for="name"><font class="label-font">Name:</font></label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" id="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                  <label class="control-label col-md-2" for="cmmnt"><font class="label-font">Comment:</font></label>
+                  <div class="col-md-10">
+                      <textarea class="form-control" rows="5" id="cmmnt" placeholder="Your Comment"></textarea>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <div class="col-md-10 col-md-offset-2">
+                      <input type="button" id="submit" class="btn btn-default sub-btn" value="Submit">
+                  </div>
+              </div>
+              
+            </form>
+            <br>
+            <!--Output div for comments-->
+            <div id="output">
+            <!--Comments appear here-->
+            </div>
+
+            </div>
+            
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+  <!--Home div-->
+
+  <div id="home">
+    <div class="row">
+      <div class="col-md-12">
+        <center>
+        <br><br>
+        <img src="profile.jpg" class="img-circle img-responsive" height="270px" width="270px" style="border:5px solid #f7f7f7;margin-top:12vh;">
+
+        <p style="margin-top:3vh" class="head1"><b>Hi there!</b></p>
+        <a href="#abt-me" class="down"><i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i></a>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!--About Me div-->
+
+  <div id="abt-me">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-7" style="padding-left:25px;">
+        <br><br>
+
+        <h1 class="head2">
+          About Me
+        </h1>
+        
+        <hr class="hr1" align="left">
+        <br>
+
+        <p class="font1">
+          Hi there!
+          <br>
+          I am Ritvik Gupta, a first year student at IIT Delhi pursuing a B.Tech. in Electrical Engineering.
+          <br><br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quam quis aspernatur, repellendus, quod et similique ducimus quos quia cumque sapiente harum ad laudantium. Vitae quas fugiat officia reprehenderit magnam.
+          <br><br><br>
+        </p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <!--Scholastic Achievements Div-->
+
+  <div id="achvmnts">
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-7" style="padding-left:25px;">
+      <br><br>
+      <h1 class="head2">
+        Scholastic Achievements
+      </h1>
+
+      <hr class="hr1" align="left">
+      <br>
+      <font class="font2">
+          <b>KVPY (SA) Fellow</b>
+      </font>
+      <font class="font3">
+        <br>
+        Department of Science and Technology, Government of India
+        <br>
+        <small>March 2018</small>
+        <br>
+        AIR-413
+      </font>
+      <br><br><br>
+      <font class="font2">
+          <b>KVPY (SX) Fellow</b>
+      </font>
+      <font class="font3">
+        <br>
+        Department of Science and Technology, Government of India
+        <br>
+        <small>March 2019</small>
+        <br>
+        AIR-73
+      </font>
+      <br><br><br>
+      <font class="font2">
+          <b>Indian National Chemistry Olympiad</b>
+      </font>
+      <font class="font3">
+        <br>
+        Homi Bhabha Centre for Science Education (HBCSE), Mumbai
+        <br>
+        <small>January 2019</small>
+        <br>
+        Gold Medal
+      </font>
+      <br><br><br><br>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <!--Interests div-->
+
+  <div id="interests">
+    <div class="row">
+      <div class="col-md-6" id="quiz1"></div>
+      <div class="col-md-6" id="quiz2">
+        <p>
+          <br><br><br>
+          <center><i class="far fa-lightbulb fa-10x quiz" aria-hidden="true"></i>
+          <br><br><br>
+          <font class="font4">Quizzing</font>
+          </center>
+           
+        </p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" id="photo1">
+            <p>
+                <br><br><br>
+                <center><i class="fas fa-camera fa-10x photo" aria-hidden="true"></i>
+                <br><br><br>
+                <font class="font4">Photography</font>
+              </center>
+                 
+              </p>
+        </div>
+        <div class="col-md-6" id="photo2"></div>
+      </div>
+      <div class="row">
+          <div class="col-md-6" id="web1"></div>
+          <div class="col-md-6" id="web2">
+            <p>
+              <br><br><br>
+              <center><i class="fas fa-code fa-10x web" aria-hidden="true"></i>
+              <br><br><br>
+              <font class="font4">Web Development</font>
+              </center>
+               
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="graphic1">
+                <p>
+                    <br><br><br>
+                    <center><img src="graphics.png" class="graphic">
+                    <br><br><br>
+                    <font class="font4">Graphic Designing</font>
+                  </center>
+                     
+                  </p>
+            </div>
+            <div class="col-md-6" id="graphic2"></div>
+          </div>
+  </div>
+
+  <!--Footer div-->
+
+  <div id="footer">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <center>
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Visit my Facebook page"><i class="fab fa-facebook-square fa-2x facebook"></i></a></li>
+            <li><a href="https://github.com/ritvikgupta199" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Visit my Github page"><i class="fab fa-github-square fa-2x github"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Visit my Instagram page"><i class="fab fa-instagram fa-2x insta"></i></a></li>
+            <li><a href="mailto:ritvikgupta199@gmail.com" data-toggle="tooltip" data-placement="bottom" title="E-mail me"><i class="far fa-envelope fa-2x email"></i></a></li>
+          </ul>
+          <font class="footer_font">
+            Site designed and developed by Ritvik Gupta, IIT Delhi
+          </font>
+        </center>
+      </div>
+      <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!--Script for Parallax-->
+
+<script type="text/javascript">
+        (function() {
+      
+      var documentE2 = $(document),
+          parallaxBg2 = $('div#home');
+      
+      documentE2.on('scroll', function() {
+          var currScrollPos2 = documentE2.scrollTop();
+          parallaxBg2.css('background-position', '50% ' + -currScrollPos2/2 + 'px');
+      }); 
+      
+  })();
+</script>
+
+
+</html>
